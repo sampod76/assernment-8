@@ -2,7 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Biodata from '../Biodata/Biodata';
 import Card from '../Card/Card';
-import { SetlocalStorage } from '../LocalStorages/LocalStorage';
+import { GetlocalStorage, SetlocalStorage } from '../LocalStorages/LocalStorage';
 
 const Body = () => {
     const [users, setUsers] = useState([]);
@@ -15,6 +15,12 @@ const Body = () => {
             .then(datas => setUsers(datas))
     }, [])
 
+    useEffect(()=>{
+        const getTimes =GetlocalStorage()
+        setBreakTime(Number(getTimes['brack-time']))
+
+    },[])
+
  function handelarAddToCard(minutes){
      const totalTime=times+ Number(minutes)
      setTimes(totalTime)
@@ -23,10 +29,10 @@ const Body = () => {
  }
 
  function hendelarAddToBrackTime(minutes){
-    setBreakTime(Number(minutes))
     const brackDb= 'brack-time'
     SetlocalStorage(brackDb,minutes)
-
+    const getTimes =GetlocalStorage()
+    setBreakTime(Number(getTimes[brackDb]))
  }
 
 

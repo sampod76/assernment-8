@@ -17,5 +17,10 @@ const SetlocalStorage = (card, time) => {
     localStorage.setItem('time', JSON.stringify(totalTime))
 };
 
+const GetlocalStorage =()=>{
+    const getTimes =localStorage.getItem('time')
+    return(JSON.parse(getTimes))
+}
 
-export { SetlocalStorage };
+
+export { SetlocalStorage ,GetlocalStorage};
