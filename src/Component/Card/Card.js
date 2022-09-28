@@ -2,7 +2,10 @@ import React from 'react';
 import './Card.css'
 
 const Card = (props) => {
+    const {handelarAddToCard}=props
     const {id,balance:time,picture,name,about,age}=props.user
+    
+
 
     return (
         <div className='' >
@@ -14,7 +17,7 @@ const Card = (props) => {
                     <h2 className=' text-lg font-bold'>For Age: {age}</h2>
                     <h2 className=' text-lg font-bold'>Time required : {time} <span>minutes</span></h2>
                     <div className="flex justify-center">
-                        <button className="btn btn-primary w-full hover:bg-amber-600">Add list</button>
+                        <button onClick={()=>handelarAddToCard(time)} className="btn btn-primary w-full hover:bg-amber-600">Add list</button>
                     </div>
                 </div>
             </div> 

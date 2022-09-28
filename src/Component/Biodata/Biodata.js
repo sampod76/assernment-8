@@ -1,49 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
+import img from './1.jpg'
+import '../LocalStorages/LocalStorage.js'
+import { SetlocalStorage } from '../LocalStorages/LocalStorage.js';
 
-const Biodata = () => {
+const Biodata = (props) => {
+    const {times,BreakTime,hendelarAddToBrackTime}=props
+  
+
+    
     return (
         <div className='flex flex-col gap-9 border-2 border-cyan-600 p-3 bg-emerald-200 h-full static top-0'>
             <div className='flex'>
-                <img src="" alt="" />
-                <div><h1 className=' text-lg font-semibold'>Sampod nath</h1>
-                    <h3>Subarnachar , Noakhali</h3></div>
+                <img className='w-14 rounded-full' src={img} alt="" />
+                <div className='mx-2'><h1 className=' text-2xl font-bold'>Sampod nath</h1>
+                    <h3 className='text-lg font-semibold'>Subarnachar , Noakhali</h3></div>
 
             </div>
-            <div className='flex gap-x-3'>
+            <div className='flex justify-between items-center'>
                 <div>
-                    <h1 className=' text-lg font-semibold'>75kg</h1>
-                    <p>Weight</p>
+                    <h1 className=' text-2xl font-bold'>75kg</h1>
+                    <p className='text-lg'>Weight</p>
                 </div>
                 <div>
-                    <h1 className=' text-lg font-semibold'>6.9</h1>
-                    <p>Height</p>
+                    <h1 className=' text-2xl font-bold'>6.9</h1>
+                    <p className='text-lg'>Height</p>
                 </div>
                 <div>
-                    <h1 className=' text-lg font-semibold'>25 year</h1>
-                    <p>Age</p>
+                    <h1 className=' text-2xl font-bold'>25 year</h1>
+                    <p className='text-lg'>Age</p>
                 </div>
             </div>
             <h1 className=' text-lg font-semibold bg-slate-600 text-white p-3 rounded-md'>Add A Break</h1>
             <div className=' flex gap-3 '>
-                <button className=' rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold'>10s</button>
-                <button className=' rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold'>20s</button>
-                <button className=' rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold'>30s</button>
-                <button className=' rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold'>40s</button>
-                <button className=' rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold'>50s</button>
+                <button type="submit" className=' text-lg font-semibold text-gray-900 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold' onClick={(e)=>hendelarAddToBrackTime(e.target.value)} value="40">40m</button>
+                <button type="submit" className=' text-lg font-semibold text-gray-900 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold' onClick={(e)=>hendelarAddToBrackTime(e.target.value)} value="50">50m</button>
+                <button type="submit" className=' text-lg font-semibold text-gray-900 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold' onClick={(e)=>hendelarAddToBrackTime(e.target.value)} value="30">30m</button>
+                <button type="submit" className=' text-lg font-semibold text-gray-900 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold' onClick={(e)=>hendelarAddToBrackTime(e.target.value)} value="45">45m</button>
+                <button type="submit" className=' text-lg font-semibold text-gray-900 rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 p-3 font-semibold' onClick={(e)=>hendelarAddToBrackTime(e.target.value)} value="55">55m</button>
+            
+                
             </div>
             <h1 className=' text-lg font-semibold bg-slate-600 text-white p-3 rounded-md'>Exercise Details</h1>
             <div className="form-control">
                 
                 <label className="input-group">
                     <span  className='w-[40%]'>Exercise time</span>
-                    <input type="text"  className="input input-bordered" />
+                    <input type="text"  className="input input-bordered"  value={times}/>
                 </label>
             </div>
             <div className="form-control">
                 
                 <label className="input-group">
                     <span className='w-[40%]'>Break time</span>
-                    <input type="text"  className="input input-bordered" />
+                    <input type="text" className="input input-bordered" value={BreakTime}/>
                 </label>
             </div>
 
