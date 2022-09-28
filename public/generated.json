@@ -1,7 +1,7 @@
 [
   {
     "id": "63348371a2037fb970487288",
-    "balance": "30m",
+    "balance": "30",
     "picture": "https://images.unsplash.com/photo-1619695750337-57020ad80efa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGhhcmQlMjB3b3JraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "age":"40-50",
     "name": "Blacksmith",
@@ -9,7 +9,7 @@
   },
   {
     "id": "6334837100587527c6ef738a",
-    "balance": "20m",
+    "balance": "20",
     "picture": "https://images.unsplash.com/photo-1635702961175-f6949dded992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YWN0aXZpdHl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     "age":"20-25",
     "name": "cycling",
@@ -17,7 +17,7 @@
   },
   {
     "id": "6334837172b6565fb16e9205",
-    "balance": "40m",
+    "balance": "40",
     "picture": "https://images.unsplash.com/photo-1600599496804-d969fd97cff0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGhhcmQlMjB3b3JraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "age":"40-60",
     "name": "Pushcart driver",
@@ -25,7 +25,7 @@
   },
   {
     "id": "63348371ba260c7e8f893cc8",
-    "balance": "42m",
+    "balance": "42",
     "picture": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxzZWFyY2h8MXx8ZXhlcmNpc2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     "age":"30-22",
     "name": "Gym guy",
@@ -33,7 +33,7 @@
   },
   {
     "id": "63348371d5d95e50d5211224",
-    "balance": "40m",
+    "balance": "40",
     "picture": "https://images.unsplash.com/photo-1662406406600-c8ffaf68c564?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI0fHxoYXJkJTIwd29ya2luZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=400&q=60",
     "age":"50-38",
     "name": "Baggage man",
@@ -41,7 +41,7 @@
   },
   {
     "id": "63348371439a51f4fe0cf660",
-    "balance": "30m",
+    "balance": "30",
     "picture": "https://images.unsplash.com/photo-1540474211005-7c8a448f69e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTB8fGFjdGl2aXR5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "age":"30-39",
     "name": "Gym guy",
@@ -49,7 +49,7 @@
   },
   {
     "id": "6334837142467370a135efbd",
-    "balance": "10m",
+    "balance": "10",
     "picture": "https://images.unsplash.com/photo-1613739118945-6b5ab75d2111?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFyZCUyMHdvcmtpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     "age": 28,
     "name": "Waterman",
@@ -57,7 +57,7 @@
   },
   {
     "id": "633483715cc5ae2c7adb843b",
-    "balance": "25m",
+    "balance": "25",
     "picture": "https://images.unsplash.com/photo-1529479627062-5f1f0b88912a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aGFyZCUyMHdvcmtpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     "age":"45-50",
     "name": "Walksop's man",
@@ -65,7 +65,7 @@
   },
   {
     "id": "63348371aad88368792b3b84",
-    "balance": "32m",
+    "balance": "32",
     "picture": "https://images.unsplash.com/photo-1473090928358-00fcead4f08c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGhhcmQlMjB3b3JraW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     "age":"50-60",
     "name": "Walksop's man",

@@ -12,9 +12,9 @@ const Card = (props) => {
                     <h1 className=' text-lg font-bold'>Name: {name}</h1>
                     <p>{about.slice(0,100)}</p>
                     <h2 className=' text-lg font-bold'>For Age: {age}</h2>
-                    <h2 className=' text-lg font-bold'>Time required : {time}</h2>
+                    <h2 className=' text-lg font-bold'>Time required : {time} <span>minutes</span></h2>
                     <div className="flex justify-center">
-                        <button className="btn btn-primary w-full">Add list</button>
+                        <button className="btn btn-primary w-full hover:bg-amber-600">Add list</button>
                     </div>
                 </div>
             </div> 

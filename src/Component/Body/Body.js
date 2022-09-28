@@ -18,7 +18,7 @@ const Body = () => {
         <div className=' gap-9 my-3 inline lg:flex relative' >
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-7 lg:w-[75%]'>
                 {
-                    users.map(user => <Card user={user}></Card>)
+                    users.map(user => <Card key={user.id} user={user}></Card>)
                 }
             </div>
             <div>
