@@ -6,7 +6,7 @@ const Card = (props) => {
 
     return (
         <div className='' >
-            <div className=" box-shadow card w-full h-full card-compact bg-base-100 shadow-xl">
+            <div className=" box-shadow card w-full h-full  card-compact bg-base-100 shadow-xl">
                 <figure><img className='h-44 w-full' src={picture} /></figure>
                 <div className="card-body">
                     <h1 className=' text-lg font-bold'>Name: {name}</h1>
