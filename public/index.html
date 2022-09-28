@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon"
+    href="data:image/png;base64,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" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -24,12 +23,23 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.31.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Poor Worker</title>
+  <style>
+    * {
+  
+  margin: 0;
+  padding: 0;
+}
+  </style>
+</head>
+
+<body class="container mx-auto p-4">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div class="" id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -39,5 +49,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
