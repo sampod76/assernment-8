@@ -15,6 +15,13 @@ const Body = () => {
             .then(datas => setUsers(datas))
     }, [])
 
+ function handelarAddToCard(minutes){
+     const totalTime=times+ Number(minutes)
+     setTimes(totalTime)
+    
+     
+ }
+
 
 
 
