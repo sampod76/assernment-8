@@ -22,7 +22,12 @@ const Body = () => {
      
  }
 
+ function hendelarAddToBrackTime(minutes){
+    setBreakTime(Number(minutes))
+    const brackDb= 'brack-time'
+    SetlocalStorage(brackDb,minutes)
 
+ }
 
 
     return (
