@@ -14,7 +14,7 @@ const Card = (props) => {
             <div className=" box-shadow card w-full h-full  card-compact bg-base-100 shadow-xl">
                 <figure><img className='h-44 w-full' src={picture} /></figure>
                 <div className="card-body">
-                    <h1 className=' text-lg font-bold'>Name: {name}</h1>
+                    <h1 className=' text-lg font-bold'>{name}</h1>
                     <p>{about.slice(0,100)}</p>
                     <h2 className=' text-lg font-bold'>For Age: {age}</h2>
                     <h2 className=' text-lg font-bold'>Time required : {time} <span>minutes</span></h2>
