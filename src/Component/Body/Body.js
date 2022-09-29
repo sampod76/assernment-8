@@ -17,7 +17,8 @@ const Body = () => {
 
     useEffect(()=>{
         const getTimes =GetlocalStorage()
-        setBreakTime(Number(getTimes['brack-time']))
+        setBreakTime(Number(getTimes))
+        
 
     },[])
 
@@ -29,10 +30,11 @@ const Body = () => {
  }
 
  function hendelarAddToBrackTime(minutes){
-    const brackDb= 'brack-time'
-    SetlocalStorage(brackDb,minutes)
+    
+    SetlocalStorage(minutes)
     const getTimes =GetlocalStorage()
-    setBreakTime(Number(getTimes[brackDb]))
+    // console.log(getTimes)
+    setBreakTime(Number(getTimes))
  }
 
 
