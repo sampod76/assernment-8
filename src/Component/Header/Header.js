@@ -9,7 +9,7 @@ const Header = () => {
                 <div className='flex w-full md:w-[30%] sm:inline md:flex-col '>
                     <div className='flex items-center gap-3'>
                         <img src={Logo} className="logo text-white " alt="logo" />
-                        <h1 className='text-xs md:text-lg font-bold'>Fermer-club</h1>
+                        <h1 className='text-xs md:text-lg font-bold'>Farmer-club</h1>
                     </div>
                     <h1 className='mt-3 text-xl font-bold'>Select today Cultivation</h1>
                 </div>
