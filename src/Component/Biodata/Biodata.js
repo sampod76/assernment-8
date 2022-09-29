@@ -50,16 +50,18 @@ const Biodata = (props) => {
             <h1 className=' text-lg font-semibold bg-slate-600 text-white p-3 rounded-md'>Exercise Details</h1>
             <div className="form-control">
                 
-                <label className="input-group">
-                    <span  className='w-[40%]'>Exercise time</span>
-                    <input type="text"  className="input input-bordered"  value={`${times} minutes`}/>
+                <label className=" bg-green-500 text-lg font-bold  text-white rounded-lg p-3">
+                    <span  className='w-[40%]'>Exercise time:</span>
+                    {/* <input type="text"  className=""  value={times}/> */}
+                    <button  className='mx-2' type="reset"> {times}  menites</button>
                 </label>
             </div>
             <div className="form-control">
                 
-                <label className="input-group">
-                    <span className='w-[40%]'>Break time</span>
-                    <input type="text" className="input input-bordered" value={`${BreakTime} minutes`}/>
+                <label className=" bg-green-500 text-lg font-bold text-white rounded-lg p-3">
+                    <span className='w-[40%]'>Break time:</span>
+                    {/* <input type="text" className="" value={BreakTime}/> */}
+                    <button className='mx-2' type="submit"> {BreakTime} menites</button>
                 </label>
             </div>
 

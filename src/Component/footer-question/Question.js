@@ -25,11 +25,11 @@ const Question = () => {
                 useeffect use cases?
                 </div>
                 <div className="collapse-content">
-                   <p>1)State management </p>
-                   <p>2)Conditional rendering </p>
-                   <p>3)Toggle flags (true/false) </p>
-                   <p>4)Counter</p>
-                   <p>5)Get API data and store it in state </p>
+                   <p>1.State management </p>
+                   <p>2.Conditional rendering </p>
+                   <p>3.Toggle flags (true/false) </p>
+                   <p>4.Counter</p>
+                   <p>5.Get API data and store it in state </p>
                 </div>
             </div>
         </div>

@@ -1,5 +1,7 @@
 import React from 'react';
 import './Card.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
     const {handelarAddToCard}=props
@@ -17,7 +19,7 @@ const Card = (props) => {
                     <h2 className=' text-lg font-bold'>For Age: {age}</h2>
                     <h2 className=' text-lg font-bold'>Time required : {time} <span>minutes</span></h2>
                     <div className="flex justify-center">
-                        <button onClick={()=>handelarAddToCard(time)} className="btn btn-primary w-full hover:bg-amber-600">Add list</button>
+                        <button onClick={()=>handelarAddToCard(time)} className="btn btn-primary w-full hover:bg-amber-600"><span className='mx-2'><FontAwesomeIcon icon={faShoppingCart} /></span>Add list </button>
                     </div>
                 </div>
             </div> 
