@@ -2,12 +2,19 @@ import React, { useState } from 'react';
 import img from './1.jpg'
 import '../LocalStorages/LocalStorage.js'
 import { SetlocalStorage } from '../LocalStorages/LocalStorage.js';
+import Swal from 'sweetalert2'
 
 const Biodata = (props) => {
     const {times,BreakTime,hendelarAddToBrackTime}=props
   
 
-    
+    const Succese=()=>{
+        Swal.fire(
+            'Good Your Break time Start!',
+            'Done your activity!',
+            'success'
+          )
+    }
     return (
         <div className='flex flex-col gap-9 border-2 border-cyan-600 p-3 bg-emerald-200 h-full static top-0'>
             <div className='flex'>
@@ -45,18 +52,18 @@ const Biodata = (props) => {
                 
                 <label className="input-group">
                     <span  className='w-[40%]'>Exercise time</span>
-                    <input type="text"  className="input input-bordered"  value={times}/>
+                    <input type="text"  className="input input-bordered"  value={`${times} minutes`}/>
                 </label>
             </div>
             <div className="form-control">
                 
                 <label className="input-group">
                     <span className='w-[40%]'>Break time</span>
-                    <input type="text" className="input input-bordered" value={BreakTime}/>
+                    <input type="text" className="input input-bordered" value={`${BreakTime} minutes`}/>
                 </label>
             </div>
 
-            <button className="bg-blue-800  hover:bg-amber-600 text-yellow-50 w-full p-2 rounded-lg w-full" type="submit">Activity Completed</button>
+            <button className="bg-blue-800  hover:bg-amber-600 text-yellow-50 w-full p-2 rounded-lg w-full" type="submit" onClick={Succese}>Activity Completed</button>
         </div>
     );
 };
